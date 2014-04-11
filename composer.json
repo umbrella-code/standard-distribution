@@ -1,0 +1,13 @@
+{
+    "name": "zachstarnes/incipient",
+    "license": "Apache License Version 2.0",
+    "type": "project",
+    "description": "MVC Framework for PHP",
+    "autoload": {
+        "psr-0": { "": "src/" }
+    },
+    "require": {
+        "php": ">=5.3.3",
+        "twig/twig": "1.*"
+    }
+}
