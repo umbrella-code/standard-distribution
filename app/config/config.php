@@ -22,5 +22,3 @@ define('DB_HOST', '127.0.0.1');
 define('DB_NAME', 'umbrella');
 define('DB_USER', 'root');
 define('DB_PASS', '');
-
-return array('DB_TYPE', 'DB_HOST', 'DB_NAME', 'DB_USER', 'DB_PASS');

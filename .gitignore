@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 /app/cache/*
 /app/logs/*
 /vendor/
 composer.lock
+=======
+/vendor
+composer.phar
+composer.lock
+.DS_Store
+>>>>>>> 3d78a599cec47c95473c3d325964a5c8b383ee93
