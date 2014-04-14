@@ -1,10 +1,10 @@
 <?php
 
-class test
+class TestController
 {
     public function __construct()
     {
-        echo "Construct called.";
+        echo "Construct called.<br /><br />";
     }
 
     public function index()
