@@ -1,13 +1,18 @@
 {
-    "name": "zachstarnes/umbrella",
+    "name": "umbrella-mvc/umbrella",
     "license": "Apache License Version 2.0",
     "type": "project",
     "description": "MVC Framework for PHP",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/umbrella-mvc/framework"
+        }
+    ],
+    "require": {
+        "umbrella-mvc/framework": "dev-master"
+    },
     "autoload": {
         "psr-0": { "": "src/" }
     },
-    "require": {
-        "php": ">=5.3.3",
-        "twig/twig": "1.*"
-    }
 }
