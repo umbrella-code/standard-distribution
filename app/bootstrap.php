@@ -13,9 +13,10 @@ else
 }
 
 //---------------------------------------------------------------------------
-// Require all settings used by Umbrella
+// Require all settings and routes used by Umbrella
 //---------------------------------------------------------------------------
-$paths  = require_once __DIR__.'/config/paths.php';
+$paths  = require __DIR__.'/config/paths.php';
+$routes = require __DIR__.'/routes.php';
 
 //---------------------------------------------------------------------------
 // Create a new instance of the Application
@@ -23,9 +24,10 @@ $paths  = require_once __DIR__.'/config/paths.php';
 $app = new Umbrella\Foundation\Application;
 
 //---------------------------------------------------------------------------
-// Bind the parameters and config setting to the app
+// Bind the parameters and routes to the app
 //---------------------------------------------------------------------------
 $app->bindPaths($paths);
+$app->bindRoutes($routes);
 
 //---------------------------------------------------------------------------
 // Send the newly created app

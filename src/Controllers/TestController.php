@@ -7,13 +7,8 @@ class TestController
         echo "Construct called.<br /><br />";
     }
 
-    public function index()
+    public function indexAction()
     {
         echo "Index method called.";
-    }
-
-    public function hello($name)
-    {
-        echo 'Hello ' . $name . '! Welcome to Umbrella.';
     }
 }
