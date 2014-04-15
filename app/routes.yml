@@ -1,0 +1,19 @@
+# or use YAML like Symfony2:
+#     route_name:
+#         path: /path
+#         controller: HomeController:index // or replace `:` with `@`
+
+default_route:
+    path: /
+    controller: IndexController
+    action: indexAction
+
+test_route:
+    path: /test
+    controller: TestController
+    action: indexAction
+
+hello_route:
+    path: /hello
+    controller: HelloController
+    action: helloAction
