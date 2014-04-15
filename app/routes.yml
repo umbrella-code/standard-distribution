@@ -1,7 +1,7 @@
-# or use YAML like Symfony2:
-#     route_name:
-#         path: /path
-#         controller: HomeController:index // or replace `:` with `@`
+#    route_name:
+#        path: /path
+#        controller: HomeController:index 
+#    maybe replace `:` with `@` and get the action on the same line as controller
 
 default_route:
     path: /
