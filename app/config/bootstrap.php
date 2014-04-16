@@ -16,7 +16,7 @@ else
 // Require all settings and routes used by Umbrella
 //---------------------------------------------------------------------------
 $paths  = require __DIR__.'/paths.php';
-$routes = file_get_contents(__DIR__.'/../routes.yml');
+$routes = __DIR__.'/../routes.yml';
 
 //---------------------------------------------------------------------------
 // Create a new instance of the Application
