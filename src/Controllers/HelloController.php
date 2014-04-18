@@ -2,7 +2,7 @@
 
 class HelloController
 {
-    public function helloAction($name = 'No Name')
+    public function helloAction($name = '')
     {
         echo 'Hello ' . $name;
     }
