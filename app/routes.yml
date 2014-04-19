@@ -1,19 +1,18 @@
 #    route_name:
 #        path: /path
-#        controller: HomeController:index 
-#    maybe replace `:` with `@` and get the action on the same line as controller
+#        controller: HomeController@index 
+#
+# add ability to place directories in front of controllers. e.g. Blog:ShowController@showAction
+# or There:Is:No:Limit:To:The:Number:Of:Parent:Directories:SomeController@someAction
 
 default_route:
     path: /
-    controller: IndexController
-    action: indexAction
+    controller: IndexController@indexAction
 
 test_route:
     path: /test
-    controller: TestController
-    action: indexAction
+    controller: TestController@indexAction
 
 hello_route:
     path: /hello
-    controller: HelloController
-    action: helloAction
+    controller: HelloController@helloAction
