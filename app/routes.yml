@@ -1,9 +1,6 @@
 #    route_name:
 #        path: /path
 #        controller: HomeController@index 
-#
-# add ability to place directories in front of controllers. e.g. Blog:ShowController@showAction
-# or There:Is:No:Limit:To:The:Number:Of:Parent:Directories:SomeController@someAction
 
 default_route:
     path: /
@@ -15,4 +12,4 @@ test_route:
 
 hello_route:
     path: /hello
-    controller: HelloController@helloAction
+    controller: Testing:Parent:Directories:HelloController@helloAction
