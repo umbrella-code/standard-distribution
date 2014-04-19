@@ -9,25 +9,18 @@ if(file_exists('../vendor/autoload.php'))
 }
 else
 {
-    throw new Exception("The composer autoload file was not found. Please run <pre>composer install</pre> or check the location of the autoload file.");
+    throw new Exception("The composer autoload file was not found. Please run composer install or check the location of the autoload file.");
 }
 
 //---------------------------------------------------------------------------
 // Require all settings and routes used by Umbrella
 //---------------------------------------------------------------------------
 $paths  = require __DIR__.'/paths.php';
-$routes = __DIR__.'/../routes.yml';
 
 //---------------------------------------------------------------------------
 // Create a new instance of the Application
 //---------------------------------------------------------------------------
-$app = new Umbrella\Foundation\Application;
-
-//---------------------------------------------------------------------------
-// Bind the parameters and routes to the app
-//---------------------------------------------------------------------------
-$app->bindPaths($paths);
-$app->bindRoutes($routes);
+$app = new Umbrella\Foundation\Application($paths);
 
 //---------------------------------------------------------------------------
 // Send the newly created app
