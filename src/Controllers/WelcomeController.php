@@ -1,17 +1,15 @@
 <?php
 
-class WelcomeController
+use Umbrella\Source\Controller;
+
+class WelcomeController extends Controller
 {
     public function indexAction()
     {
-        Twig_Autoloader::register();
+        $text = 'Welcome back!';
 
-        $loader = new Twig_Loader_Filesystem(__DIR__.'/../Views');
-        $twig = new Twig_Environment($loader, array(
-            'cache' => __DIR__.'/../../app/cache/twig',
-            'auto_reload' => true
+        $this->render('welcome.html.twig', array(
+            'text' => $text
         ));
-
-        echo $twig->render('welcome.html.twig', array('logo' => __DIR__.'/../public/img/umbrella.png'));
     }
 }
