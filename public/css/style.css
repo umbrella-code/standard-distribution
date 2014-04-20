@@ -1,0 +1,27 @@
+body, html {
+    font-family: 'Nunito', sans-serif;  
+    font-size: 16px;
+    margin: 0;
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#logo {
+    margin: 15% auto 0;
+    width: 10%;
+}
+
+#welcome_text {
+    text-align: center;
+}
+
+#welcome_text h2 {
+    font-weight: 300;
+}

@@ -23,6 +23,8 @@ define('DB_NAME', 'umbrella');
 define('DB_USER', 'root');
 define('DB_PASS', '');
 
+date_default_timezone_set('America/New_York');
+
 // return array(
 
 //     //---------------------------------------------------------------------------

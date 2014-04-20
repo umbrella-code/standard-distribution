@@ -2,9 +2,9 @@
 #        path: /path
 #        controller: HomeController@index 
 
-default_route:
+welcome_route:
     path: /
-    controller: IndexController@indexAction
+    controller: WelcomeController@indexAction
 
 test_route:
     path: /test
