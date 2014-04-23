@@ -9,14 +9,14 @@ Simply add the following to your `composer.json` file and run `composer install`
 
 ```
 "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/umbrella-mvc/framework"
-        }
-    ],
-    "require": {
-        "umbrella-mvc/framework": "dev-master"
-    },
+    {
+        "type": "vcs",
+        "url": "https://github.com/umbrella-mvc/framework"
+    }
+],
+"require": {
+    "umbrella-mvc/framework": "dev-master"
+},
 ```
     
 ##Warning
