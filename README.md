@@ -7,7 +7,8 @@ MVC Framework for PHP
 
 Simply add the following to your `composer.json` file and run `composer install`
 
-`"repositories": [
+```
+"repositories": [
         {
             "type": "vcs",
             "url": "https://github.com/umbrella-mvc/framework"
@@ -15,9 +16,10 @@ Simply add the following to your `composer.json` file and run `composer install`
     ],
     "require": {
         "umbrella-mvc/framework": "dev-master"
-    },`
+    },
+```
     
-###Warning
+##Warning
 
 This framework is still VERY eary in development. Please be warned that there is a lot of security implementations that need to be added.
 
