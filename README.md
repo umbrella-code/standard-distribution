@@ -21,7 +21,7 @@ Simply add the following to your `composer.json` file and run `composer install`
     
 ##Warning
 
-This framework is still VERY eary in development. Please be warned that there is a lot of security implementations that need to be added.
+This framework is still VERY early in development. Please be warned that there is a lot of security implementations that need to be added and refined.
 
 ##License
 
