@@ -3,7 +3,7 @@ Umbrella
 
 MVC Framework for PHP
 
-###Installation
+##Installation
 
 Simply add the following to your `composer.json` file and run `composer install`
 
@@ -23,6 +23,6 @@ Simply add the following to your `composer.json` file and run `composer install`
 
 This framework is still VERY eary in development. Please be warned that there is a lot of security implementations that need to be added.
 
-###License
+##License
 
 Please see the `LICENSE` file for more information on the license that ships with this framework.
