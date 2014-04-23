@@ -1,7 +1,7 @@
 Umbrella
 =========
 
-MVC Framework for PHP
+MVC Framework for PHP using the [Umbrella Framework](Umbrella Framework).
     
 ##Warning
 
