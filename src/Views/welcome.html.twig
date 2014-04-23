@@ -4,9 +4,12 @@
 
 {% block content %}
     <div id="logo">
-        <img src="img/umbrella.png" alt="Umbrella">
+        <img src="/img/umbrella.png" alt="Umbrella">
     </div>
     <div id="welcome_text">
+        {% if name or age %}
+            <h2>Hello {{ name }}</h2>
+        {% endif %}
         <h2>{{ text }}</h2>
     </div>
 {% endblock %}

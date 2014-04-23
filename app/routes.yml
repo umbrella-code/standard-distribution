@@ -11,5 +11,5 @@ test_route:
     controller: TestController@indexAction
 
 hello_route:
-    path: /hello
+    path: /hello/{name}
     controller: Testing:Parent:Directories:HelloController@helloAction
