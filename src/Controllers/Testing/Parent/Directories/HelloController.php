@@ -1,5 +1,7 @@
 <?php
 
+namespace Controllers\Testing\Parent\Directories;
+
 use Umbrella\Source\Controller;
 
 class HelloController extends Controller

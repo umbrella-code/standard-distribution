@@ -1,5 +1,7 @@
 <?php
 
+namespace Controllers;
+
 use Umbrella\Source\Controller;
 
 class WelcomeController extends Controller
