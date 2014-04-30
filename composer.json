@@ -13,10 +13,6 @@
         "umbrella-mvc/framework": "dev-master"
     },
     "autoload": {
-        "psr-0": {
-            "Source": "src/",
-            "Controllers\\": "src/Controllers",
-            "Models\\": "src/Models"
-        }
+        "psr-0": { "": "src/" }
     }
 }

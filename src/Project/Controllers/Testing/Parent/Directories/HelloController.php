@@ -1,6 +1,6 @@
 <?php
 
-namespace Controllers\Testing\Parent\Directories;
+namespace Project\Controllers\Testing\Parent\Directories;
 
 use Umbrella\Source\Controller;
 

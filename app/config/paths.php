@@ -20,7 +20,13 @@ return array(
     //---------------------------------------------------------------------------
     // Source Path
     //---------------------------------------------------------------------------
-    'src' => __DIR__.'/../../src',
+    //
+    // This is the only one that you should have to change. It will need to be
+    // renamed to the folder that your project resides in. By default the name
+    // of this folder is 'Project' and is located in the 'src' folder. You can
+    // rename this to whatever you like, just make sure you change it here.
+    //
+    'src' => __DIR__.'/../../src/Project',
 
     //---------------------------------------------------------------------------
     // Cache Path

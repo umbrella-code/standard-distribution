@@ -1,6 +1,10 @@
 <?php
 
-namespace Controllers;
+/**
+ * You must use a namespace based on where the file is located. 
+ */
+
+namespace Project\Controllers;
 
 use Umbrella\Source\Controller;
 
