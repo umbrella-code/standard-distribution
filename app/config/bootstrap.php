@@ -3,9 +3,9 @@
 //---------------------------------------------------------------------------
 // Load the composer autoload file
 //---------------------------------------------------------------------------
-if(file_exists('../vendor/autoload.php'))
+if(file_exists(__DIR__.'/../../vendor/autoload.php'))
 {
-    require '../vendor/autoload.php';
+    require __DIR__.'/../../vendor/autoload.php';
 }
 else
 {
@@ -16,12 +16,12 @@ else
 // Require all settings used by Umbrella
 //---------------------------------------------------------------------------
 $paths  = require __DIR__.'/paths.php';
-$db     = require __DIR__.'/database.php';
+$params = require __DIR__.'/database.php';
 
 //---------------------------------------------------------------------------
 // Create a new instance of the Application
 //---------------------------------------------------------------------------
-$app = new Umbrella\Foundation\Application($paths, $db);
+$app = new Umbrella\Foundation\Application($paths, $params);
 
 //---------------------------------------------------------------------------
 // Send the newly created app
