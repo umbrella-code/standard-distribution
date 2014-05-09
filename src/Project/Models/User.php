@@ -3,54 +3,53 @@
 namespace Project\Models;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
+
 use Umbrella\Source\Model;
 
 /**
- * User
  *
- * @Entity
- * @Table(name="users")
+ *
+ * @ORM\Entity
+ * @ORM\Table(name="users")
  */
 class User extends Model
 {
     /**
-     * @Id
+     * @ORM\Id
      *
-     * @Column(name="id", type="integer")
-     * @GeneratedValue(strategy="AUTO")
-     * @var integer
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\GeneratedValue(strategy="AUTO")
      */
     protected $id;
 
     /**
      * Firstname
      *
-     * @Column(type="string")
-     * @var string
+     * @ORM\Column(type="string")
+     * @Assert\Length(min=2, max=5)
      */
     protected $first_name = "";
 
     /**
      * Lastname
      *
-     * @Column(type="string")
-     * @var string
+     * @ORM\Column(type="string")
+     * @Assert\Length(min=2, max=5)
      */
     protected $last_name = "";
 
     /**
      * Email Address
      *
-     * @Column(type="string")
-     * @var string
+     * @ORM\Column(type="string")
      */
     protected $email = "";
 
     /**
      * Username
      *
-     * @Column(type="string")
-     * @var string
+     * @ORM\Column(type="string")
      */
     protected $username = "";
 

@@ -11,6 +11,10 @@
             <h2>Hello {{ name }}!</h2>
         {% endif %}
 
+        {% for error in errors %}
+            <li>{{ error }}</li>
+        {% endfor %}
+
         <h2>{{ text }}</h2>
     </div>
 {% endblock %}

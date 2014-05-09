@@ -1,0 +1,22 @@
+#!/usr/bin/env php
+<?php
+
+use Symfony\Component\Console\Application;
+use Doctrine\ORM\Tools\Console\ConsoleRunner;
+use Umbrella\Console\Command\Doctrine\MetadataCommand;
+use Umbrella\Console\Command;
+
+require_once 'app/config/bootstrap.php';
+
+$em = $app->getEm();
+$helperSet = ConsoleRunner::createHelperSet($em);
+
+$application = new Application('Bella Console Application', '1.0');
+$application->setHelperSet($helperSet);
+
+$c = $application->all('Umbrella\Console\Command\Doctrine');
+print_r($c);
+exit;
+
+$application->add(new MetadataCommand());
+$application->run();

@@ -12,6 +12,8 @@ else
     throw new Exception("The composer autoload file was not found. Please run composer install or check the location of the autoload file.");
 }
 
+require __DIR__.'/../../vendor/umbrella-mvc/framework/src/Umbrella/Foundation/global.php';
+
 //---------------------------------------------------------------------------
 // Require all settings used by Umbrella
 //---------------------------------------------------------------------------

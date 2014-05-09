@@ -9,10 +9,26 @@ class WelcomeController extends Controller
 {
     public function indexAction()
     {
+        $em = $this->getManager();
+
+        $user = new User();
+        $user->setFirstName('Zach');
+        $user->setLastName('Starn');
+
+        $v = $this->getValidator();
+        $v->validate($user);
+
+        if($v->passed())
+        {
+            $em->persist($user);
+            $em->flush();
+        }
+
         $text = 'Welcome back!';
         
         $this->render('welcome.html.twig', array(
-            'text' => $text
+            'text' => $text,
+            'errors' => $v->getErrors()
         ));
     }
 }
