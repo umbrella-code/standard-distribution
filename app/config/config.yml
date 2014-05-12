@@ -1,0 +1,106 @@
+#---------------------------------------------------------------------------
+# Application Settings
+#---------------------------------------------------------------------------
+#
+# This file contains any configuration settings for the app like error
+# reporting and the location of the app installtion.
+#
+
+application:
+
+    #---------------------------------------------------------------------------
+    # Project Name
+    #---------------------------------------------------------------------------
+    #
+    # You can set the name of the project below. This is very important as the
+    # application can not function without this. Please make sure that if this
+    # is changed, you make sure that you also change the name of the folder in
+    # the `src` folder to match.
+    #
+
+    project_name: "Umbrella"
+
+    #---------------------------------------------------------------------------
+    # Application Environment
+    #---------------------------------------------------------------------------
+    #
+    # Here is where you will set the environment for the application. Make sure
+    # to change this to `prod` once you are ready to deploy the application.
+    #
+
+    environment: "dev"
+
+    #---------------------------------------------------------------------------
+    # Default Time Zone
+    #---------------------------------------------------------------------------
+    #
+    # The is where you can set the default time zone for the application. This
+    # is mostly used for the database.
+    #
+
+    time_zone: "America/New_York"
+
+#---------------------------------------------------------------------------
+# Database Configuration
+#---------------------------------------------------------------------------
+#
+# This is where you can configure your selected database and it's required
+# parameters.
+#
+
+database:
+    
+    #---------------------------------------------------------------------------
+    # Selected Database
+    #---------------------------------------------------------------------------
+    #
+    # This is the name of the database that you will be using for the
+    # application. Make sure that this is one of the databases from the list
+    # below.
+    #
+
+    default: "mysql"
+
+    #---------------------------------------------------------------------------
+    # Database Types
+    #---------------------------------------------------------------------------
+    #
+    # After you have typed the database you would like to use above please find
+    # the one you are using below and enter all of the required information to
+    # allow Doctrine to connect you to the database.
+    #
+
+    types:
+
+        sqlite:
+            driver: "sqlite"
+            dbname: ""
+            prefix: ""
+
+        mysql:
+            driver:     "pdo_mysql"
+            host:       "127.0.0.1"
+            dbname:     "Umbrella"
+            user:       "root"
+            password:   ""
+            charset:    "utf8"
+            collation:  "utf8_unicode_ci"
+            prefix:     ""
+
+        pgsql:
+            driver:     "pgsql"
+            host:       "127.0.0.1"
+            dbname:     "Umbrella"
+            user:       "root"
+            password:   ""
+            charset:    "utf8"
+            prefix:     ""
+            schema:     "public"
+
+        sqlsrv:
+            driver:     "sqlsrv"
+            host:       "127.0.0.1"
+            dbname:     "Umbrella"
+            user:       "root"
+            password:   ""
+            prefix:     ""

@@ -5,11 +5,3 @@
 welcome_route:
     path: /
     controller: WelcomeController@indexAction
-
-test_route:
-    path: /test
-    controller: TestController@indexAction
-
-hello_route:
-    path: /hello/{name}
-    controller: Testing:Parent:Directories:HelloController@helloAction

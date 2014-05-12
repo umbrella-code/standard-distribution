@@ -26,7 +26,7 @@ return array(
     // of this folder is 'Project' and is located in the 'src' folder. You can
     // rename this to whatever you like, just make sure you change it here.
     //
-    'src' => __DIR__.'/../../src/Project',
+    'src' => __DIR__.'/../../src/Umbrella',
 
     //---------------------------------------------------------------------------
     // Cache Path

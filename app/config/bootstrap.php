@@ -16,12 +16,11 @@ else
 // Require all settings used by Umbrella
 //---------------------------------------------------------------------------
 $paths  = require __DIR__.'/paths.php';
-$params = require __DIR__.'/database.php';
 
 //---------------------------------------------------------------------------
 // Create a new instance of the Application
 //---------------------------------------------------------------------------
-$app = new Umbrella\Foundation\Application($paths, $params);
+$app = new Umbrella\Foundation\Application($paths);
 
 //---------------------------------------------------------------------------
 // Send the newly created app
