@@ -1,10 +1,6 @@
 {
     "name": "umbrella-code/umbrella",
-<<<<<<< HEAD
     "license": "MIT License",
-=======
-    "license": "Apache License Version 2.0",
->>>>>>> 242fcffef051461877ee00f8dd4efbfda9d008e3
     "type": "project",
     "description": "MVC Framework for PHP",
     "repositories": [
