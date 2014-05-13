@@ -1,7 +1,7 @@
 Umbrella
 =========
 
-MVC Framework for PHP using the [Umbrella Framework](http://github.com/umbrella-mvc/framework).
+MVC Framework for PHP using the [Umbrella Framework](http://github.com/umbrella-code/framework).
 
 ##Installation
 
