@@ -9,7 +9,7 @@ To use Umbrella, simply download the application and run `composer install` from
 
 ##Warning
 
-This framework is still VERY early in development. Please be warned that there is a lot of security implementations that need to be added and refined.
+This framework is still in development. There are still security implementations that need to be added and refined.
 
 ##License
 
