@@ -1,16 +1,16 @@
 {
-    "name": "umbrella-mvc/umbrella",
-    "license": "Apache License Version 2.0",
+    "name": "umbrella-code/umbrella",
+    "license": "MIT License",
     "type": "project",
     "description": "MVC Framework for PHP",
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/umbrella-mvc/framework"
+            "url": "https://github.com/umbrella-code/framework"
         }
     ],
     "require": {
-        "umbrella-mvc/framework": "dev-master"
+        "umbrella-code/framework": "dev-master"
     },
     "autoload": {
         "psr-0": { "": "src/" }
