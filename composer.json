@@ -5,7 +5,7 @@
     "keywords": ["project", "umbrella", "mvc"],
     "description": "The Umbrella Standard Distribution",
     "require": {
-        "umbrella-code/framework": "dev-master"
+        "umbrella-code/umbrella": "dev-master"
     },
     "autoload": {
         "psr-0": { "": "src/" }
