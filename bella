@@ -3,8 +3,7 @@
 
 use Symfony\Component\Console\Application;
 use Doctrine\ORM\Tools\Console\ConsoleRunner;
-use Umbrella\Console\Command\Doctrine\MetadataCommand;
-use Umbrella\Console\Command;
+use Umbrella\Console\Command\Doctrine as Doctrine;
 
 require_once 'app/config/bootstrap.php';
 
@@ -14,9 +13,10 @@ $helperSet = ConsoleRunner::createHelperSet($em);
 $application = new Application('Bella Console Application', '1.0');
 $application->setHelperSet($helperSet);
 
-$c = $application->all('Umbrella\Console\Command\Doctrine');
-print_r($c);
-exit;
-
-$application->add(new MetadataCommand());
+$application->addCommands(array(
+    new Doctrine\Schema\CreateSchemaCommand(),
+    new Doctrine\Schema\DropSchemaCommand(),
+    new Doctrine\Schema\UpdateSchemaCommand(),
+    new Doctrine\GenerateEntitiesCommand()
+));
 $application->run();
