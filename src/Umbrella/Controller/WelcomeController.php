@@ -3,7 +3,6 @@
 namespace Umbrella\Controller;
 
 use Umbrella\Source\Controller;
-use Project\Model\User;
 
 class WelcomeController extends Controller
 {
