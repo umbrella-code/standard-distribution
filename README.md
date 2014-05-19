@@ -1,11 +1,11 @@
 Umbrella
 =========
 
-MVC Framework for PHP using the [Umbrella Framework](http://github.com/umbrella-code/framework).
+PHP Framework for Web Applications using the [Umbrella Framework](http://github.com/umbrella-code/framework).
 
 ##Installation
 
-To use Umbrella, simply download the application and run `composer install` from the root directory of your Umbrella installation. 
+To use Umbrella, simply download the application and run `composer install` from the root directory of your Umbrella installation.
 
 ##Warning
 

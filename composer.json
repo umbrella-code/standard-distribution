@@ -2,13 +2,7 @@
     "name": "umbrella-code/umbrella",
     "license": "MIT License",
     "type": "project",
-    "description": "MVC Framework for PHP",
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/umbrella-code/framework"
-        }
-    ],
+    "description": "The Umbrella Standard Distribution",
     "require": {
         "umbrella-code/framework": "dev-master"
     },
