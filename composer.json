@@ -2,6 +2,7 @@
     "name": "umbrella-code/umbrella",
     "license": "MIT License",
     "type": "project",
+    "keywords": ["project", "umbrella", "mvc"],
     "description": "The Umbrella Standard Distribution",
     "require": {
         "umbrella-code/framework": "dev-master"
